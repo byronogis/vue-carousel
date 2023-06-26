@@ -1,16 +1,16 @@
 {
-  "name": "vue-carousel",
-  "version": "1.0.0",
+  "name": "@liamrad/vue-carousel",
+  "version": "0.0.1",
   "packageManager": "pnpm@7.31.0",
   "description": "component based on vue3.x",
-  "author": "peterroe",
+  "author": "liamrad",
   "license": "MIT",
-  "homepage": "https://github.com/peterroe/un#readme",
+  "homepage": "https://github.com/liamrad/vue-carousel#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/peterroe/un.git"
+    "url": "git+https://github.com/liamrad/vue-carousel.git"
   },
-  "bugs": "https://github.com/peterroe/un/issues",
+  "bugs": "https://github.com/liamrad/vue-carousel/issues",
   "keywords": [
     "vue3",
     "component",
