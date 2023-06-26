@@ -5,28 +5,28 @@
   "description": "component based on vue3.x",
   "author": "peterroe",
   "license": "MIT",
-  "keywords": [
-    "vue3",
-    "component",
-    "vite"
-  ],
   "homepage": "https://github.com/peterroe/un#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/peterroe/un.git"
   },
   "bugs": "https://github.com/peterroe/un/issues",
-  "main": "./dist/index.umd.js",
-  "module": "./dist/index.es.js",
-  "types": "./dist/index.d.ts",
+  "keywords": [
+    "vue3",
+    "component",
+    "vite"
+  ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "require": "./dist/index.umd.js",
-      "import": "./dist/index.es.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/index.es.js"
     },
     "./*": "./*"
   },
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -42,6 +42,10 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.2.0",
+    "vue": "3.2.47"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.35.3",
@@ -60,8 +64,5 @@
     "vite-plugin-dts": "2.2.0",
     "vitest": "0.28.5",
     "vue-tsc": "1.2.0"
-  },
-  "dependencies": {
-    "vue": "3.2.47"
   }
 }
