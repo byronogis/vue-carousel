@@ -1,3 +1,18 @@
 // Vitest Snapshot v1
 
-exports[`my vue component > should render 1`] = `"<div> Hello, this is peterroe</div>"`;
+exports[`my vue component > should render 1`] = `
+"<div data-v-85f21125=\\"\\" class=\\"vue-carousel\\">
+  <div data-v-85f21125=\\"\\" class=\\"vue-carousel-list vue-carousel-list_overflow\\">
+    <div data-v-85f21125=\\"\\" class=\\"vcl-item-box vcl-item-box_default\\">
+      <div data-v-85f21125=\\"\\" class=\\"vcl-item\\"></div>
+      <div data-v-85f21125=\\"\\" class=\\"vcl-item\\"></div>
+      <div data-v-85f21125=\\"\\" class=\\"vcl-item\\"></div>
+    </div>
+    <div data-v-85f21125=\\"\\" class=\\"vcl-item-box vcl-item-box_repeat\\">
+      <div data-v-85f21125=\\"\\" class=\\"vcl-item\\"></div>
+      <div data-v-85f21125=\\"\\" class=\\"vcl-item\\"></div>
+      <div data-v-85f21125=\\"\\" class=\\"vcl-item\\"></div>
+    </div>
+  </div>
+</div>"
+`;

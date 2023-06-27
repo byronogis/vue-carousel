@@ -1,7 +1,9 @@
+import { mergeConfig } from 'vite'
 import { defineConfig } from 'vitest/config'
+import ViteConfig from './vite.config'
 
-export default defineConfig({
+export default mergeConfig(ViteConfig, defineConfig({
   test: {
     environment: 'happy-dom',
   },
-})
+}))
