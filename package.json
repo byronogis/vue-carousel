@@ -44,7 +44,6 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@vueuse/core": "^10.2.0",
     "vue": "3.2.47"
   },
   "devDependencies": {
@@ -52,6 +51,7 @@
     "@types/node": "^18.15.11",
     "@vitejs/plugin-vue": "3.2.0",
     "@vue/test-utils": "2.3.2",
+    "@vueuse/core": "^10.2.0",
     "bumpp": "8.2.1",
     "eslint": "8.38.0",
     "gh-pages": "5.0.0",
