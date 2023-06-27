@@ -1,10 +1,14 @@
 <script setup lang="ts">
 const list = [1, 2, 3, 4, 5, 6]
+
+const itemClick = (payload) => {
+  console.log('itemClick', payload)
+}
 </script>
 
 <template>
   <div class="demo">
-    <MyComponent :list="list">
+    <MyComponent :list="list" @itemClick="itemClick">
       <template #default="{ item }">
         <div class="item">
           {{ item }}
