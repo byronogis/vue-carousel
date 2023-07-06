@@ -1,16 +1,16 @@
 {
-  "name": "@liamrad/vue-carousel",
+  "name": "@byronogis/vue-carousel",
   "version": "0.0.1",
   "packageManager": "pnpm@7.31.0",
   "description": "component based on vue3.x",
-  "author": "liamrad",
+  "author": "byronogis",
   "license": "MIT",
-  "homepage": "https://github.com/liamrad/vue-carousel#readme",
+  "homepage": "https://github.com/byronogis/vue-carousel#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liamrad/vue-carousel.git"
+    "url": "git+https://github.com/byronogis/vue-carousel.git"
   },
-  "bugs": "https://github.com/liamrad/vue-carousel/issues",
+  "bugs": "https://github.com/byronogis/vue-carousel/issues",
   "keywords": [
     "vue3",
     "component",
