@@ -14,7 +14,7 @@
   "keywords": [
     "vue3",
     "component",
-    "vite"
+    "carousel"
   ],
   "exports": {
     ".": {
@@ -27,6 +27,9 @@
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
