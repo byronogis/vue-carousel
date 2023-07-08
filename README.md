@@ -10,3 +10,7 @@
 | delay | String | '1.25s' | carousel animation delay |
 | itemKey | String | 'id' | carousel item key |
 | pauseOnHover | Boolean | true | pause on hover |
+
+### Demo
+
+[Demo](https://byronogis.github.io/vue-carousel)
