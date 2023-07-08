@@ -1,6 +1,6 @@
 {
   "name": "@byronogis/vue-carousel",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "packageManager": "pnpm@7.31.0",
   "description": "component based on vue3.x",
   "author": "byronogis",
