@@ -5,7 +5,6 @@
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | list | Array | [] | carousel list |
-| width | Number | * | carousel view width |
 | offset | Number | 0 | carousel translate offset |
 | ratio | Number | 0.03 | carousel animation ratio |
 | delay | String | '1.25s' | carousel animation delay |

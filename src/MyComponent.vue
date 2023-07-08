@@ -4,7 +4,6 @@ import { useElementSize } from '@vueuse/core'
 
 const props = withDefaults(defineProps<{
   list: []
-  width?: number
   offset?: number
   ratio?: number
   delay?: string
@@ -21,7 +20,7 @@ const emits = defineEmits<{
   (e: 'itemClick', payload: any): void
 }>()
 
-const { list, width, offset, ratio, delay, itemKey } = toRefs(props)
+const { list, offset, ratio, delay, itemKey } = toRefs(props)
 
 const carouselListRef = ref(null)
 const carouselItemBoxRefs = ref([])
@@ -32,7 +31,7 @@ const carouselItemBoxWidth = useElementSize(carouselItemBoxRefsDefault).width //
 const carouselListAnimationDuration = computed(() => `${(carouselItemBoxWidth.value * ratio.value).toFixed(2)}s`) // 根据总宽度计算动画时长
 const carouselListTransformValue = computed(() => `translateX(-${carouselItemBoxWidth.value + offset.value}px)`) // 动画移动距离
 
-const isCarouselListOverflow = computed(() => carouselItemBoxWidth.value >= (width?.value ?? carouselListWidth.value)) // 是否需要滚动
+const isCarouselListOverflow = computed(() => carouselItemBoxWidth.value >= (carouselListWidth.value)) // 是否需要滚动
 const isCarouselListAnimationPulse = ref(false) // 跑马灯动画暂停
 const carouselListClass = computed(() => ({
   'vue-carousel-list_overflow': isCarouselListOverflow.value,
