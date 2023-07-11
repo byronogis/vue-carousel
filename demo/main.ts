@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import MyComponent from '../src/index'
+import VueCarousel from '../src/index'
 import App from './App.vue'
 
-createApp(App).use(MyComponent).mount('#app')
+createApp(App).use(VueCarousel).mount('#app')

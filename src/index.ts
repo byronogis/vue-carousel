@@ -1,8 +1,8 @@
 import type { App } from 'vue'
-import MyComponent from './MyComponent.vue'
+import VueCarousel from './VueCarousel.vue'
 
 function install(app: App) {
-  app.component('MyComponent', MyComponent)
+  app.component('VueCarousel', VueCarousel)
 }
 
 export default {

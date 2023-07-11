@@ -36,13 +36,13 @@ function looseJsonParse(obj) {
 <template>
   <div class="demo">
     <div class="box">
-      <MyComponent v-bind="componentProps" @itemClick="itemClick">
+      <VueCarousel v-bind="componentProps" @itemClick="itemClick">
         <template #default="{ item }">
-          <div class="item">
+          <div class="item" @click="itemClick(111111)">
             {{ item }}
           </div>
         </template>
-      </MyComponent>
+      </VueCarousel>
     </div>
 
     <div class="props">
