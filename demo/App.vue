@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
+import JSON5 from 'json5'
 import { name, version } from '../package.json'
 
 const itemClick = (payload) => {
-  console.log('itemClick', payload)
+  console.warn('itemClick', payload)
 }
 
 const componentProps = ref({})
@@ -21,16 +22,12 @@ const propsRaw = ref(`{
 
 watch(propsRaw, (val) => {
   try {
-    componentProps.value = looseJsonParse(val)
+    componentProps.value = JSON5.parse(val)
   }
   catch (error) {
     console.log(error)
   }
 }, { immediate: true })
-function looseJsonParse(obj) {
-  // eslint-disable-next-line no-new-func
-  return Function(`"use strict";return (${obj});`)()
-}
 </script>
 
 <template>
